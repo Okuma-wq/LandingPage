@@ -235,7 +235,7 @@
                 font-size: 18px;
             }
 
-            /* 992 até 1199 */
+            /* Responsivo do 992 até 1199 */
             @media screen and (max-width: 1199px){
                 .sobre{
                     height: auto;
@@ -259,7 +259,7 @@
                 }
             }
 
-            /* 768 até 991 */
+            /* Responsivo do 768 até 991 */
             @media screen and (max-width: 991px) {
                 .artigo-sobre img{
                     max-width: 600px;
@@ -291,11 +291,12 @@
                 
             }
 
-            /* 576 até 767 */
+            /* Responsivo do 576 até 767 */
             @media screen and (max-width: 767px) {
-
                 .menu {
                     width: 100%;
+                    margin: 0px;
+                    /* background-color: black; */
                 }
 
                 .btnmenu {
@@ -311,11 +312,55 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    align-items: center;
                 }
                 .menu ul a:hover{
                     background-color: unset;
                 }
+
+                /* fim menu */
+                .content{
+                    margin: auto;
+                    width: 80%;
+                }
+                .banner-text{
+                    width: auto;
+                }
+                .banner-text h1{
+                    font-size: 70px;
+                    /* background-color: rgb(7, 22, 21); */
+                    width: 400px;
+                }
+                .banner-text p{
+                    font-size: 30px;
+                    width: auto;
+                }
+                /* fim banner */
+
+                .artigo-sobre{
+                    justify-content: center;
+                }
+
+                .artigo-sobre img{
+                    max-width: 500px;
+                    min-width: 300px;
+                }
+                .artigo-text-sobre h3:nth-child(1){
+                    width: auto;
+                    
+                }
+    
+                .artigo-text-sobre h3:nth-child(2){
+                    width: auto;
+                    font-size: 40px;
+                }
+    
+                .artigo-text-sobre p{
+                    width: auto;
+                    font-size: 20px;
+                }
                 
+                /* fim sobre */
                 .info {
                     height: 500px;
                 }
@@ -324,12 +369,79 @@
                     flex-direction: column;
                     justify-content: space-around;
                 }
+                /* fim info */
 
                 .endereço {
                     width: 100%;
                 }
                 .end-text{
-                    width: 500px;
+                    width: 450px;
                 }
 
-            }            
+            }
+
+            /* Responsivo do 375 até 575 */
+            @media screen and (max-width: 575px) {
+                .banner{
+                    height: 600px;
+                }
+                .banner-text{
+                    width: 100%;
+                    height: auto;
+                }
+
+                .banner-text h1{
+                    font-size: 50px;
+                    width: auto;
+                }
+                .banner-text p{
+                    font-size: 35px;
+                }
+                .banner-text img{
+                    width: 60px;
+                }
+                .alinhando-abaixo{
+                    padding-bottom: 20px;
+                }
+                /* fim banner*/
+
+                .sobre h2{
+                    font-size: 50px;
+                }
+                .artigo-sobre{
+                    width: 300px;
+                }
+                .artigo-sobre img{
+                    max-width: 300px;
+                }
+                .artigo-text-sobre h3:nth-child(1){
+                    width: auto;
+                    
+                }
+    
+                .artigo-text-sobre h3:nth-child(2){
+                    width: auto;
+                    font-size: 30px;
+                }
+    
+                .artigo-text-sobre p{
+                    width: auto;
+                    font-size: 18px;
+                }
+
+                /* fim sobre */
+                .endereço h2{
+                    padding-top: 10px;
+                    width: auto;
+                    font-size: 50px;
+                }
+                .end-text{
+                    width: 100%;
+                }
+                .end-text p{
+                    font-size: 20px;
+                }
+                .end-text img{
+                    width: 200px;
+                }
+            }
